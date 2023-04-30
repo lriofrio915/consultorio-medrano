@@ -55,8 +55,8 @@ const Projects = () => {
 
         <div className={styles.wrapper}>
           {projects.map((item, index) => (
-            <ScrollAnimation>
-              <Project key={index} {...item} />
+            <ScrollAnimation key={index}>
+              <Project  {...item} />
             </ScrollAnimation>
           ))}
         </div>

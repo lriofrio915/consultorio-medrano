@@ -24,10 +24,11 @@ const CTA = (props) => {
 
           <ScrollAnimation>
             <div className={styles.image_container}>
-              <img 
+              <Image 
                 className={styles.image} 
                 src="/images/medrano.jpg" 
-                
+                width={500}
+                height={500}
               />
             </div>
           </ScrollAnimation>

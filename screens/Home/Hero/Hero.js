@@ -60,22 +60,20 @@ const Hero = () => {
 
           <div className={styles.stats_wrapper}>
             {stats.map((item, index) => (
-              <motion.div variants={item}>
-                <Stats variants={item} key={index} {...item} />
+              <motion.div key={index} variants={item}>
+                <Stats {...item} />
               </motion.div>
             ))}
           </div>
         </motion.div>
 
         <div className={styles.image_container}>
-          <Image
+          <img
             className={styles.image}
             src="/images/avatar.jpg"
             layout="fill"
             placeholder="blur"
-            blurDataURL="/images/avatar.jpg"
-            width={500}
-        height={500}
+            // blurDataURL="/images/avatar.jpg"
           />
 
           <div className={styles.author}>

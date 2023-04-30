@@ -68,8 +68,8 @@ const Hero = () => {
 
         <div className={styles.wrapper}>
           {services.map((item, index) => (
-            <ScrollAnimation>
-              <Card key={index} {...item} />
+            <ScrollAnimation key={index}>
+              <Card {...item} />
             </ScrollAnimation>
           ))}
         </div>
