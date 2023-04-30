@@ -52,7 +52,7 @@ const Hero = () => {
 
         <div className={styles.wrapper}>
           <div className={styles.image_container}>
-            <img className={styles.image} src="/images/consultorio-medrano.jpg"/>
+            <img className={styles.image} src="/images/consulMedrano.jpg"/>
           </div>
           <div className={styles.bottom_content}>
             <span className={cn("hairline-small", styles.text)}>EXPERIENCIA</span>

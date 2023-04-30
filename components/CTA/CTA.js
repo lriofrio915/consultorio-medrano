@@ -26,7 +26,7 @@ const CTA = (props) => {
             <div className={styles.image_container}>
               <Image 
                 className={styles.image} 
-                src="/images/medrano.jpg" 
+                src="/images/doctoraMedrano.jpg" 
                 width={500}
                 height={500}
               />
