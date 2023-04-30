@@ -3,9 +3,7 @@ import cn from "classnames";
 import Stats from "./Stats";
 import { motion } from "framer-motion";
 import { variants, item } from "../../../variants/animation";
-import Image from "next/image";
 import Link from "next/link";
-import { Link as AnchorLink } from "react-scroll";
 
 const stats = [
   {
@@ -48,14 +46,14 @@ const Hero = () => {
                 </motion.button>
               </a>
             </Link>
-            <AnchorLink to="projects" offset={-128} smooth={true}>
+            <Link href="projects" offset={-128} smooth={true}>
               <motion.button
                 variants={item}
                 className={cn("button button-stroke", styles.button)}
               >
                 Registrarme
               </motion.button>
-            </AnchorLink>
+            </Link>
           </div>
 
           <div className={styles.stats_wrapper}>

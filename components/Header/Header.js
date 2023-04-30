@@ -91,13 +91,13 @@ const Header = () => {
               <Icon name="close" />
             </button>
             {/* responsive view */}
-            <button className={cn("button-small", styles.menu_link)}>
+            <button className={cn("button", styles.menu_link)}>
               {"Agendar Cita"} 
             </button>
           </div>
         </OutsideClickHandler>
         <Link href="/">
-          <a className={cn("button-small", styles.link)}>{"Agendar Cita"}</a>
+          <a className={cn("button", styles.link)}>{"Agendar Cita"}</a>
         </Link>
 
         <button
