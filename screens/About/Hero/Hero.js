@@ -52,7 +52,7 @@ const Hero = () => {
 
         <div className={styles.wrapper}>
           <div className={styles.image_container}>
-            <img className={styles.image} src="/images/consultorio-medrano.jpg" />
+            <img className={styles.image} src="/images/consultorio-medrano.jpg"/>
           </div>
           <div className={styles.bottom_content}>
             <span className={cn("hairline-small", styles.text)}>EXPERIENCIA</span>
@@ -61,8 +61,8 @@ const Hero = () => {
             </h1>
             <div className={styles.items_wrapper}>
               {items.map((item, index) => (
-                <ScrollAnimation>
-                  <Item key={index} {...item} />
+                <ScrollAnimation key={index}>
+                  <Item {...item} />
                 </ScrollAnimation>
               ))}
             </div>

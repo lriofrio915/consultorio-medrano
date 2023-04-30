@@ -18,7 +18,7 @@ export async function getStaticProps() {
 export default function Home({ allNewsData }) {
   return (
     <Layout>
-       <Hero />
+      <Hero />
       <Services />
       <News number="02" allNewsData={allNewsData} />
       <CTA
