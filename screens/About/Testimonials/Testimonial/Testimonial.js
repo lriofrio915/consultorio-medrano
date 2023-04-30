@@ -11,7 +11,12 @@ const Testimonial = () => {
       </p>
 
       <div className={styles.author_container}>
-        <Image src="/images/cesar.jpg" className={styles.image} />
+        <Image 
+          src="/images/cesar.jpg" 
+          className={styles.image}
+          width={44}
+          height={44} 
+        />
         <div className={styles.content}>
           <p className={cn("body-2-bold", styles.author)}>Estela Cabrera</p>
           <p className={cn("caption", styles.position)}>Mujer, 35 años.</p>
