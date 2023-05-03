@@ -14,21 +14,20 @@ const Hero = () => {
     // <p className={styles.titulo}>Hola mundo</p>
     <div className={styles.login} style={{ minHeight: heightWindow }}>
       <div className={styles.wrapper}>
-        <Link className={styles.logo} href="/">
-          <a>
+        <Link  href="/">
+          <a className={styles.logoLink}>
             <Image
-              className={styles.pic}
-              src="/images/logoMedrano.png"
-              width={175}
-              height={175}
+              src="/images/logo.png"
+              width={120}
+              height={120}
               // srcDark="/images/logo-light.png"
               alt="Core"
             />
           </a>
         </Link>
-        <div className={cn("h2", styles.title)}>Bienvenidos</div>
+        <div className={cn("h2", styles.title)}>Iniciar sesión</div>
         <div className={styles.head}>
-          <div className={styles.subtitle}>Inicia sesión fácilmente con</div>
+          <div className={styles.subtitle}>Ingresa fácilmente con</div>
           <div className={styles.btns}>
             <button className={cn("button-stroke", styles.button)}>
               <img 
