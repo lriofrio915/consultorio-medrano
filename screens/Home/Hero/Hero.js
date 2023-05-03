@@ -36,7 +36,7 @@ const Hero = () => {
             Diagnóstico y tratamiento de las enfermedades que afectan al paciente joven y adulto mayor.
           </motion.p>
           <div className={styles.wrapper}>
-            <Link href="/contact">
+            <Link href="/signin">
               <a>
                 <motion.button
                   variants={item}
