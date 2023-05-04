@@ -8,11 +8,11 @@ const Entry = ({ onConfirm }) => {
   return (
     <div className={styles.entry}>
       <div className={styles.head}>
-        <div className={styles.info}>Sign up with Open account</div>
+        <div className={styles.info}>Regístrate fácilmente con</div>
         <div className={styles.btns}>
           <button className={cn("button-stroke", styles.button)}>
             <img src="/images/content/google.svg" alt="Google" />
-            Google
+            <h2>Google</h2>
           </button>
           <button className={cn("button-stroke", styles.button)}>
             <img
@@ -21,25 +21,25 @@ const Entry = ({ onConfirm }) => {
               // srcDark="/images/content/apple-light.svg"
               alt="Apple"
             />
-            Apple ID
+            <h2>Apple ID</h2>
           </button>
         </div>
       </div>
       <div className={styles.body}>
-        <div className={styles.info}>Or continue with email address</div>
+        <div className={styles.info}>O continúa con tu correo electrónico</div>
         <TextInput
           className={styles.field}
           name="email"
           type="email"
-          placeholder="Your email"
+          placeholder="Email"
           required
           icon="mail"
         />
         <button className={cn("button", styles.button)} onClick={onConfirm}>
-          Continue
+          Continuar
         </button>
         <div className={styles.note}>
-          This site is protected by reCAPTCHA and the Google Privacy Policy.
+        Este sitio está protegido por reCAPTCHA y la Política de Privacidad de Google.
         </div>
       </div>
     </div>

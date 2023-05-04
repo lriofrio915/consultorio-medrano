@@ -8,7 +8,7 @@ const Code = () => {
     <div className={styles.code}>
       <div className={styles.body}>
         <div className={styles.info}>
-          We just send you a verify code. Check your inbox to get them.
+          Te enviamos un código de verificación. Revisa tu bandeja de entrada.
         </div>
         <div className={styles.fieldset}>
           <div className={styles.field}>
@@ -49,14 +49,14 @@ const Code = () => {
           </div>
         </div>
         <div className={styles.errorNote}>
-          The code you entered is incorrect.
+          El código que ingresaste es incorrecto.
         </div>
         <button className={cn("button", styles.button)}>
           <Loader className={styles.loader} white />
-          <span>Continue</span>
+          <span>Continuar</span>
         </button>
         <div className={styles.note}>
-          This site is protected by reCAPTCHA and the Google Privacy Policy.
+          Este sitio está protegido por reCAPTCHA y la Política de Privacidad de Google.
         </div>
       </div>
     </div>

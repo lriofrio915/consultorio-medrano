@@ -5,13 +5,16 @@ import { use100vh } from "react-div-100vh";
 import Link from "next/link";
 import Entry from "../../../components/Entry/Entry";
 import Code from "../../..//components/Code/Code";
+import Image from "next/image";
 // import Image from "../../components/Image";
 
 const items = [
-  "Unlimited product uploads",
-  "Pro tips",
-  "Free forever",
-  "Full author options",
+  "Atención en consultorio",
+  "Visita domiciliaria",
+  "Teleconsulta",
+  "Sueroterapia",
+  "Electrocardiograma",
+  "Chequeo pre-quirúrgico",
 ];
 
 const Hero = () => {
@@ -22,10 +25,19 @@ const Hero = () => {
     <div className={styles.row}>
       <div className={styles.col}>
         <div className={styles.wrap}>
-          <div className={styles.preview}>
-            <img src="/images/content/login-pic.png" alt="Login" />
-          </div>
-          <div className={cn("h4", styles.subtitle)}>Plan includes</div>
+          <Link className={styles.logo} href="/">
+            <a>
+              <Image
+                className={styles.pic}
+                src="/images/logo.png"
+                // srcDark="/images/logo-light.png"
+                alt="Core"
+                width={200}
+                height={200}
+              />  
+            </a>
+          </Link>
+          <div className={cn("h4", styles.subtitle)}>Servicio Médico</div>
           <ul className={styles.list}>
             {items.map((x, index) => (
               <li key={index}>{x}</li>
@@ -35,23 +47,16 @@ const Hero = () => {
       </div>
       <div className={styles.col} style={{ minHeight: heightWindow }}>
         <div className={styles.head}>
-          <Link className={styles.logo} href="/">
-            <img
-              className={styles.pic}
-              src="/images/logo-dark.png"
-              // srcDark="/images/logo-light.png"
-              alt="Core"
-            />
-          </Link>
+          
           <div className={styles.info}>
-            Already a member?{" "}
+            ¿Ya tiene una cuenta? {" "}
             <Link className={styles.link} href="/sign-in">
               Iniciar sesión
             </Link>
           </div>
         </div>
         <div className={styles.wrapper}>
-          <div className={cn("h2", styles.title)}>Sign up</div>
+          <div className={cn("h2", styles.title)}>Registrarse</div>
           {visible ? <Entry onConfirm={() => setVisible(false)} /> : <Code />}
         </div>
       </div>
