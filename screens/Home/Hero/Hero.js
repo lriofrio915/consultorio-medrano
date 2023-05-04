@@ -36,7 +36,7 @@ const Hero = () => {
             Diagnóstico y tratamiento de las enfermedades que afectan al paciente joven y adulto mayor.
           </motion.p>
           <div className={styles.wrapper}>
-            <Link href="/signin">
+            <Link href="/sign-in">
               <a>
                 <motion.button
                   variants={item}
@@ -46,7 +46,7 @@ const Hero = () => {
                 </motion.button>
               </a>
             </Link>
-            <Link href="projects" offset={-128} smooth={true}>
+            <Link href="/sign-up" offset={-128} smooth={true}>
               <motion.button
                 variants={item}
                 className={cn("button button-stroke", styles.button)}
