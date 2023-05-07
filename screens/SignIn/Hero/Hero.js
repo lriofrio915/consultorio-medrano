@@ -69,8 +69,8 @@ const Hero = () => {
           </div>
           <div className={styles.info}>
             ¿No tiene una cuenta?{" "}
-            <Link className={styles.link} href="/sign-up">
-              Registrarse
+            <Link href="/sign-up">
+              <a className={styles.link}>Registrarse</a>
             </Link>
           </div>
         </div>

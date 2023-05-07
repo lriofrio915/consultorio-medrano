@@ -2,7 +2,6 @@ import React from "react";
 import cn from "classnames";
 import styles from "./Entry.module.sass";
 import TextInput from "../../components/TextInput";
-// import Image from "../../../components/Image";
 
 const Entry = ({ onConfirm }) => {
   return (

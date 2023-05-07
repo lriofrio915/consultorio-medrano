@@ -1,4 +1,5 @@
 import cn from "classnames";
+import React, { useState } from "react";
 import styles from "./pricing.module.css";
 import TextOverlap from "../../../components/TextOverlap";
 import Tag from "../../../components/Tag";
@@ -14,7 +15,6 @@ const pricing = [
   {
     plan: "ATENCIÓN DOMICILIARIA",
     price: "$40",
-    //shadow: "#2a85ff",
     background: "#f4f5f6",
   },
   {
@@ -51,7 +51,14 @@ const pricing = [
 
 const Pricing = () => {
 
+  const [selectedItem, setSelectedItem] = useState(0);
+
+  const handleItemClick = (index) => {
+    setSelectedItem(index);
+  };
+
   return (
+    
     <div className={cn("section")}>
       <div className={cn("container", styles.container)}>
         <div className={styles.upper_content}>
@@ -68,14 +75,14 @@ const Pricing = () => {
         </div>
         <div className={styles.wrapper}>
           {pricing.map((type, index) => (
-            <ScrollAnimation>
-              <div
-                className={styles.item_container}
+            <ScrollAnimation key={index}>
+              <div 
+                className={cn(styles.item_container, selectedItem === index && styles.selected)}
                 style={{
                   background: type.background,
                   boxShadow: `inset 0 0 0 2px ${type.shadow}`,
                 }}
-                key={index}
+                onClick={() => handleItemClick(index)}
               >
                 <p className={cn("hairline-small")}>{type.plan}</p>
                 <h2 className={cn("h1", styles.price)}>{type.price}</h2>

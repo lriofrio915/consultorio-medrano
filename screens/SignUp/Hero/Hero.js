@@ -50,8 +50,8 @@ const Hero = () => {
           
           <div className={styles.info}>
             ¿Ya tiene una cuenta? {" "}
-            <Link className={styles.link} href="/sign-in">
-              Iniciar sesión
+            <Link href="/sign-in">
+              <a className={styles.link}>Iniciar sesión</a>
             </Link>
           </div>
         </div>

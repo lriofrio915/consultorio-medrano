@@ -38,6 +38,10 @@
   color: var(--p1);
 }
 
+.button {
+  margin-right: 8px;
+}
+
 .open_button {
   display: none;
 }

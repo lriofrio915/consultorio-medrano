@@ -40,9 +40,6 @@ const contact = [
   {
     title: "WhatsApp: (+593) 98 267 8350",
   },
-  // {
-  //   title: "Fax: (+63) 555 0100",
-  // },
   {
     title: "Email: stefy@laclinicaenlinea.com",
   },

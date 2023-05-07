@@ -4,6 +4,7 @@ import Layout from "../components/Layout";
 import News from "../components/News";
 import { getSortedNewsData } from "../lib/news";
 import { Hero, Services } from "../screens/Home";
+import Schedule from "../components/Schedule";
 
 export async function getStaticProps() {
   const allNewsData = getSortedNewsData();
