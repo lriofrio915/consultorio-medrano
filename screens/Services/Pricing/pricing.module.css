@@ -30,6 +30,13 @@
   border-radius: 8px;
 }
 
+.item_container:hover {
+  border: 2px solid #2a85ff;
+  cursor: pointer;
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.15);
+}
+
 .feature {
   display: grid;
   grid-template-columns: repeat(2, auto);

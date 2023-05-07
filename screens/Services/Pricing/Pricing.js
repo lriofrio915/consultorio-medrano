@@ -51,10 +51,19 @@ const pricing = [
 
 const Pricing = () => {
 
-  const [selectedItem, setSelectedItem] = useState(0);
+  const [selectedItem, setSelectedItem] = useState(-1);
+  const [isHovered, setIsHovered] = useState(false);
 
   const handleItemClick = (index) => {
     setSelectedItem(index);
+  };
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
   };
 
   return (

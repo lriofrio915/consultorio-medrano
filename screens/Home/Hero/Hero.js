@@ -72,8 +72,6 @@ const Hero = () => {
             className={styles.image}
             src="/images/avatar.jpg"
             layout="fill"
-            width={500}
-            height={500}
           />
 
           <div className={styles.author}>
