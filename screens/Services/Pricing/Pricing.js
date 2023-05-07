@@ -51,21 +51,6 @@ const pricing = [
 
 const Pricing = () => {
 
-  const [selectedItem, setSelectedItem] = useState(-1);
-  const [isHovered, setIsHovered] = useState(false);
-
-  const handleItemClick = (index) => {
-    setSelectedItem(index);
-  };
-
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
-
   return (
     
     <div className={cn("section")}>
@@ -86,12 +71,11 @@ const Pricing = () => {
           {pricing.map((type, index) => (
             <ScrollAnimation key={index}>
               <div 
-                className={cn(styles.item_container, selectedItem === index && styles.selected)}
+                className={styles.item_container}
                 style={{
                   background: type.background,
                   boxShadow: `inset 0 0 0 2px ${type.shadow}`,
                 }}
-                onClick={() => handleItemClick(index)}
               >
                 <p className={cn("hairline-small")}>{type.plan}</p>
                 <h2 className={cn("h1", styles.price)}>{type.price}</h2>
